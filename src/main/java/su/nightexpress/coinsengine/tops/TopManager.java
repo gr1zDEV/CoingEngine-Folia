@@ -61,13 +61,8 @@ public class TopManager extends AbstractManager<CoinsEnginePlugin> {
 
         List<CoinsUser> users = this.plugin.getDataHandler().getUsers();
 
-        users.removeIf(user -> {
-            Player player = user.getPlayer();
-            if (player != null) {
-                this.hideFromTops(player);
-            }
-            return user.isHiddenFromTops();
-        });
+        // Keep this async-safe for Folia: permission state is updated on join/quit listeners.
+        users.removeIf(CoinsUser::isHiddenFromTops);
 
         this.currencyRegistry.getCurrencies().forEach(currency -> {
             AtomicInteger counter = new AtomicInteger(0);
