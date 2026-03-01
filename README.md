@@ -36,14 +36,14 @@
 - [**Opertation Logs**](https://nightexpressdev.com/coinsengine/features/logs). Log all currency operations into separate file.
 
 ## System Requirements
-- Server Software: [**Spigot**](https://www.spigotmc.org/link-forums/88/) or [**Paper**](https://papermc.io/downloads/paper)
+- Server Software: [**Spigot**](https://www.spigotmc.org/link-forums/88/), [**Paper**](https://papermc.io/downloads/paper) or [**Folia**](https://papermc.io/software/folia)
 - Server Version: <span style="color:red">**1.21.4**</span> or above
 - Java Version: [**21**](https://adoptium.net/temurin/releases) or above
 - Dependencies:
     - [**nightcore**](https://nightexpressdev.com/nightcore/) - Plugin engine.
 - Optional Plugins:
     - [**Vault**](https://spigotmc.org/resources/34315/) - Economy integration.
-- Folia Supported: <span style="color:red">**No**</span>
+- Folia Supported: <span style="color:green">**Yes**</span>
 - Forge Supported: <span style="color:red">**No**</span>
 
 ## Links
